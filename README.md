@@ -1,4 +1,7 @@
-# README
+# x_sunit_api
+Challenge for Backend Internship at Gocase
+
+[Problem](https://github.com/kimlima/gocase-backend-challenge-internship) 
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
