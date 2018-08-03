@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   #Api definintion
-  namespace :api, defaults: { format: :json },
-                              constraints: { subdomain: 'api' }, path: '/' do
-    scope module: :v1 do
-      #We are going to list our resources here
+  namespace 'api' do
+    namespace 'v1' do
+      resources :survivors do
+        resources :localization
+        resources :witnesses
+      end
     end
   end
 end
