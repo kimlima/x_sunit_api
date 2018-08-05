@@ -6,6 +6,9 @@ Rails.application.routes.draw do
         resources :localization
         resources :witnesses
       end
+      get 'reports/abducted_percentage'
+      get 'reports/non_abducted_percentage'
+      get 'reports/list'
     end
   end
 end
