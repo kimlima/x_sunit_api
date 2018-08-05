@@ -1,3 +1,4 @@
+require_relative 'render'
 module Api
   module V1
 
@@ -42,14 +43,6 @@ module Api
 
       def survivor_params
         params.require(:survivor).permit(:name, :gender, :age)
-      end
-
-      def render_success(message, data)
-        render json: {
-          status: 'SUCCESS',
-          message: message,
-          data: data
-        }, status: :ok
       end
     end
   end
