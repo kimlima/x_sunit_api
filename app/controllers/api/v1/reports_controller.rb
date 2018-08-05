@@ -9,7 +9,7 @@ module Api
 
       # create and update request aren't required, as Report is created when the 
       # first Survivor is added, and updates as the Survivors are added, deleted
-      # or abduceted
+      # or abducted
 
       # Get request on '/list'
       def list
